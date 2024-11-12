@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: #292929;
+    scroll-behavior: smooth;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+* {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+/* zmuszony zostałem do tego przez jQuery */
+p, nav a, cite, h1, figcaption, label, table { color: whitesmoke; }
+
+.sidepanel {
+    width: 15%;
+    max-height: 100vh;
+}
+
+.content {
+    width: 85%;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+.gallery .boxes { flex-wrap: wrap; justify-content: center; }
+
+a {
+    color: inherit;
+    padding: 1vw;
+    margin: auto;
+}
+
+nav {
+    font-size: calc(1vw + 1em);
+    margin: 0;
+    padding: 0;
+    background-color: #262525;
+    height: 100%;
+}
+nav a {
+    display: block;
+    text-align: left
+}
+nav a:hover {
+    transition: 0.4s ease-in-out;
+    padding-left: 15%;
+}
+nav a:hover:not(.list, .sublist) {
+    background-color: #0d9400;
+    color: black;
+}
+nav .list, .sublist {
+    font-size: calc(-0.7vw + 1em);
+    text-decoration: none;
+}
+nav .list:hover, .sublist:hover {
+    background-color: #084f01;
+    color: black;
+}
+nav .list::before { content: "-> "; }
+nav .sublist::before { content: "---> "; }
+
+header {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+header h1 {
+    font-size: calc(4vw + 1em);
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: calc(1vw + 1em);
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+
+section p { padding-left: 5%; padding-right: 5%; }
+
+main {
+    font-size: calc(1vw + 1em);
+    min-height: 100vh;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+footer {
+    color: #595959;
+    font-size: calc(1vw + 1em);
+    padding: 1vw;
+    background-color: #262020;
+    height: 10vh;
+}
+
+form {
+    border: 1px white solid;
+    width: auto;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+input { color: black; }
+input:required { border: red solid 5px; }
+
+button { color: black; }
+
+table {
+    width: 70%;
+    margin: auto;
+}
+th { font-weight: bold; }
+table, th, td { border: white solid 1px; }
+
+.gallery div::after { content: ""; display: table; clear: both; }
+.gallery figure {
+    border: 3px white solid;
+    width: calc(30vw + 1em);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    float: left;
+}
+.gallery figcaption {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-top: 3px white solid;
+}
+.gallery img {
+    margin: auto;
+    height: calc(15vw + 1em);
+    width: calc(28vw + 1em);
+}
+
+.megacity figure {
+    width: calc(50vw + 1em);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    float: left;
+}
+.megacity img {
+    margin: auto;
+    height: calc(30vw + 1em);
+    width: calc(56vw + 1em);
+}
+
+#megacityfinder, #howlongisthewar, #jquerythings { display: none; }
+#dialog p, #oswiadczenie { color: black; }
+
+.video {
+    margin: auto;
+    height: calc(15vw + 1em);
+    width: calc(35vw + 1em);
+}
+
+.icon {
+    height: 30%;
+    width: 30%;
+}
+
+.yellow { color: gold !important; }
+.brown { color: saddlebrown !important; }
+.red, .redcyborgs { color: red !important; }
+.redcyborgs { padding: 0; }
+.redcyborgs::after {
+    background-image: url("img/hdpage/automatons.png");
+    background-size: calc(1vw + 0.5em) calc(1vw + 0.5em);
+    display: inline-block;
+    width: calc(1vw + 0.5em);
+    height: calc(1vw + 0.5em);
+    content: "";
+}
+.orange { color: darkorange !important; padding: 0; }
+.orange::after {
+    background-image: url("img/hdpage/terminids.png");
+    background-size: calc(1vw + 0.5em) calc(1vw + 0.5em);
+    display: inline-block;
+    width: calc(1vw + 0.5em);
+    height: calc(1vw + 0.5em);
+    content: "";
+}
+.blue, .bluesquid { color: dodgerblue !important; padding: 0; }
+.bluesquid::after {
+    background-image: url("img/hdpage/illuminate.png");
+    background-size: calc(1vw + 0.5em) calc(1vw + 0.5em);
+    display: inline-block;
+    width: calc(1vw + 0.5em);
+    height: calc(1vw + 0.5em);
+    content: "";
+}
+
+.ultrakillintro { width: 70%; }
+.drgintro, .hdintro { width: 90%; }
+
+#active { background-color: darkgreen; color: black; }
+
+#leftbox, #middlebox, #rightbox {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    border: white solid 1px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 1%;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideIn;
+}
+#leftbox p, #middlebox p, #rightbox p { padding: 0; margin-bottom: 0; margin-top: 0; }
+#middlebox figure { margin-top: 0; }
+#leftbox { margin-left: 1.5%; }
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@media only screen and (max-width: 900px) {
+    body { flex-direction: column; }
+    .sidepanel { width: auto; }
+    .content { width: auto; }
+    .boxes { flex-direction: column; }
+
+    nav, footer { background-color: #222222; height: auto; }
+    nav { font-size: calc(2vw + 1em); }
+    nav a { display: inline-block; text-align: center; }
+    nav .list, .sublist { display: none;}
+
+    .gallery figure { width: auto; float: none; }
+    .gallery img { width: calc(80vw + 1em); height: calc(38vw + 1em); }
+    .megacity figure { width: auto; float: none; }
+    .megacity img { width: calc(80vw + 1em); height: calc(58vw + 1em); }
+
+    .video { width: calc(80vw + 1em); height: calc(38vw + 1em); }
+
+    #leftbox, #middlebox, #rightbox {
+        height: auto;
+        width: auto;
+    }
+    #leftbox { margin-left: 1%; }
+
+    #nonmobile { display: none; }
+    #nonmobile-followup::after { content: "Z powodu na niski budżet alokowany przez korporację Deep Rock Galactic, tablica arsenału nie jest dostępna na urządzeniach mobilnych."; }
+}

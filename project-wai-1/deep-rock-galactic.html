@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Deep Rock Galactic</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rates.css">
+    <link rel="icon" href="favicon.ico?" type="image/x-icon">
+</head>
+<body>
+    <div class="sidepanel">
+        <nav>
+            <a href="index.html">Główna</a>
+            <a href="helldivers.html">Helldivers</a>
+            <a id="active" href="deep-rock-galactic.html">DRG</a>
+            <a class="list" href="#classesarsenal">Klasy i Arsenał</a>
+            <a class="list" href="#perks">Perki</a>
+            <a class="list" href="#missions">Misje...</a>
+            <a class="sublist" href="#alcohol">Alkohol</a>
+            <a class="list" href="#zlecenia">Zlecenia</a>
+            <a class="sublist" href="#deepdive"> Głębokie Kopy</a>
+            <a class="sublist" href="#overclock">Overclockowanie</a>
+            <a class="list" href="#galeria">Galeria</a>
+            <a href="ultrakill.html">ULTRAKILL</a>
+        </nav>
+    </div>
+    <div class="content">
+        <header id="start">
+            <h1 class="brown">Deep Rock Galactic</h1>
+            <p>(czyli o tym, jak alkohol wpływa pozytywnie na wydajność krasnoludów)</p>
+        </header>
+        <main>
+            <section>
+                <h2 class="brown">O czym jest?</h2>
+                <p>
+                    Deep Rock Galactic to pierwszoosobowy co-op, w którym grupa czterech krasnoludów wykonuje operacje wydobywcze na planecie Hoxxes-IV na rzecz korporacji o tej samej nazwie co gra.
+                    Korporacja na operacje wydobywcze na tej planecie przyjmuje tylko i wyłącznie krasnoludów z racji ekstremalnych warunków. Zazwyczaj tych bez żadnego doświadczenia. Przeciętny "zielonobrody" nie przeżywa do czasu awansu.
+                </p>
+                <h3 class="brown" id="classesarsenal">Klasy i Arsenał</h3>
+                <p id="nonmobile-followup">
+                    W grze mamy do wyboru cztery klasy: Scout, Gunner, Engineer i Driller. Każda z nich ma dostęp do innego arsenału.
+                    Arsenał wyróżniamy na broń główną, poboczną, specjalną, użytkową, granaty, kilof i zbroję. Każda klasa ma identyczny kilof i tylko jedno unikatowe ulepszenie w swojej zbroi.
+                </p>
+                <table id="nonmobile">
+                    <tr>
+                        <th>Klasa</th>
+                        <th>Główna</th>
+                        <th>Poboczna</th>
+                        <th>Specjalna</th>
+                        <th>Użytkowa</th>
+                        <th>Granaty</th>
+                        <th>Ulepszenie Zbroi</th>
+                    </tr>
+                    <tr>
+                        <td>Scout</td>
+                        <td>Karabin, Karabin wyborowy, Karabin plazmowy</td>
+                        <td>Stzelba dwulufowa, Podwójne karabinki automatyczne, Kusza</td>
+                        <td>Wyrzutnia Flar</td>
+                        <td>Hak do chwytania</td>
+                        <td>Pole Magnetyczne, Zamrażający, Feromony, Elektryczny Boomerang</td>
+                        <td>Obniżenie obrażeń od upadku</td>
+                    </tr>
+                    <tr>
+                        <td>Gunner</td>
+                        <td>Minigun, Działo automatyczne, Wyrzutnia minirakiet</td>
+                        <td>Ciężki rewolwer, Pistolet seriostrzelny, Pistolet cewkowy</td>
+                        <td>Generator Tarczy</td>
+                        <td>Wyrzutnia tyrolki</td>
+                        <td>Naczepny, Zapalający, Kasetowy, "Leadburster"</td>
+                        <td>Obniżenie obrażeń od wybuchów</td>
+                    </tr>
+                    <tr>
+                        <td>Engineer</td>
+                        <td>Strzelba pompka, Karabin Woltaiczny, Karabin Naprowadzający</td>
+                        <td>Wyrzutnia granatów, Przecinak laserowy, Dyfraktor Laserowy</td>
+                        <td>Działko</td>
+                        <td>Wyrzutnia Platform</td>
+                        <td>Przynęta, Seryjny plazmowy, Mina zbliżeniowa, Horda Niszczarek</td>
+                        <td>Obniżenie obrażeń od trucizny</td>
+                    </tr>
+                    <tr>
+                        <td>Driller</td>
+                        <td>Miotacz ognia, Zamrażarka, Wyrzutnia kwasu</td>
+                        <td>Pistolet pół-automatyczny, Ładowarka Plazmowa, Działo Mikrofalowe</td>
+                        <td>C4</td>
+                        <td>Wiertła</td>
+                        <td>Topór, Silnie wybuchający, Neurotoksyna, Sprężynowa Piła</td>
+                        <td>Obniżenie obrażeń od ognia</td>
+                    </tr>
+                </table>
+                <p>Prawie każdy przedmiot w tabeli można nabyć oraz ulepszyć. Wyjątek stanowią granaty, które można tylko nabyć.</p>
+                <h3 class="brown" id="perks">Perki</h3>
+                <p>
+                    Każdy krasnolud ma dostęp do tego samego zbioru perków. Perki wyróżniamy na dwie grupy: pasywne (oznaczone kolorem ciemno-różowym) oraz aktywne (oznaczone kolorem cyjankowym)
+                    Krasnoludy mogą się wyposażyć w trzy perki pasywne i dwa perki aktywne. Dostęp do trzeciego miejsca na perk pasywny i drugiego miejsca na perk aktywny mają tylko krasnoludy, które awansowano.
+                    Dostęp do drugiego miejsca na perk pasywny trzeba zakupić punktami perków. Punkty perków można otrzymać wykonując kamienie milowe - określone, proste do wykonania czynności (typu ukończ x misji na danym biomie)
+                    Każdy perk może zostać ulepszony.
+                </p>
+            </section>
+            <section>
+                <h2 class="brown" id="missions">Misje, Modyfikatory, Nadmierne spożywanie alkoholu</h2>
+                <h3 class="brown">Misje</h3>
+                <p>W grze dostępne jest 9 misji.</p>
+                <p>Ekspedycja Wydobywcza: Najprostrza misja. Celem jest wydobycie 200/250/325/400 jednostek surowca o nazwie Morkite. Ma on ciemno-cyjankowy kolor.</p>
+                <p>Łowy na jaja: Celem jest wydobycie 4/6/8 jaj Arachnidów.</p>
+                <p>Rafineria: Celem jest zainstalowanie pomp do trzech studni płynnego Morkite'u i podłączenie każdej rurociągiem do Rafinerii. Po podłączeniu i zbudowaniu wszystkich rurociągów, należy bronić rafinerii i naprawiać rurociągi dopóki nie zakończy wydobycia.</p>
+                <p>Odzysk: Celem jest naprawienie 2/3 jednostek MINI-M.U.L.E (do jednostki M.U.L.E. krasnoludy depozytują wykopane surowce), zatankowanie podu ucieczkowego i ewakuacja.</p>
+                <p>Ekstrakcja Punktowa: Celem jest wydobycie 7/10 klejnotów o nazwie Aquarq. Są to niebieskie klejnoty które są zakopane w ścianach jaskinii. Depozytowanie odbywa się poprzez platformę bojową. Czas jest kluczowy - obecność wroga się nasila z minuty na minutę.</p>
+                <p>Eskorta: Celem jest eskortowanie, naprawianie i tankowanie Drilldozera do tzw. Ommoran Heartstone - magicznego kamienia, który będzie walczyć o to, aby nie zostać wydobytym.</p>
+                <p>Eliminacja: Celem jest zabicie 2/3 "Drednotów" - prawie niezniszczalnych, gigantycznych arachnidów, które zagrażają operacjom wydobywczym.</p>
+                <p>Sabotaż Przemysłowy: Celem jest wydobycie Jednostki Danych należącej do rywalizującej korporacji. Aby to zrobić, należy zniszczyć dwa generatowy, które zasilają tzw. "Caretakera" - odwróconą piramidę, która ma do dyspozycji cztery macki i ma zadanie chronić Jednostkę Danych.</p>
+                <p>Głęboki Skan: Celem jest odnalezienie Geody Morkite'u. Robi się to poprzez skanowanie 3/5 Kryształów Rezonansowych, poczym zesłana zostaje Winda Bojowa, którą należy bronić, gdy ona wierci w dół do geody.</p>
+                <h3 class="brown">Modyfikatory</h3>
+                <p>
+                    Każda misja może występować z Modyfikatorem. Wyróżniamy dwa typy - Mutacje (czerwone) oraz Anomalie (żółte).
+                    Mutacje działają przeciwko graczom, natomiast Anomalie są albo neutralne albo pozytywne. Misje mogą mieć do dwóch mutacji (ale zazwyczaj tylko jeden - na każdy 30-minutowy cykl biomów jest tylko jedna misja z dwoma mutacjami) i co najwyżej jedną anomalię.
+                    Granie na misjach z mutacjami jest nagradzane podwyższonym mnożnikiem nagród.
+                </p>
+                <h3 class="brown" id="alcohol">Alkohol</h3>
+                <p>
+                    W stacji kosmicznej, na której mieszkają krasnoludy, funkcjonuje bar. W tym barze można zakupić różnorakie alkohole z różnymi efektami - tymczasowe zwiększenie/zmniejszenie wzrostu, zamrożenie, podpalenie, aura taneczna, tymczasowy wzrost intelektu, czy natychmiastowe zaśnięcie z powodu siły alkoholu.<br>
+                    Jest też grupa "Piw Specjalnych" - jest oferowane tylko jedno na czas bycia w stacji. Wypicie piwa specjalnego daje określony buff na czas misji.
+                    Przykładowe buffy to zwiększenie zdrowia, natychmiastowe kopanie kilofem, obniżenie obrażeń od upadania, szybsze dźwiganie ciężkich klejnotów, zwiększona ilośc wydobywanego złota/Morkite'u, zwiększone obrażenia wręcz...
+                </p>
+            </section>
+            <section>
+                <h2 class="brown" id="zlecenia">Zlecenia, Awansowanie, Overclockowanie, Głębokie Kopy</h2>
+                <h3 class="brown">Zlecenia</h3>
+                <p>
+                    W grze dostępny jest terminal zleceń - są to, innymi słowy, "questy" do wykonania i odblokowania konkretnych nagród, np. najwyższy poziom trudności, Tygodniowe Łowy Overclocków, odblokowanie misji. Są dostępne również zadania sezonowe, np. halloweenowe, świąteczne, sylwestrowe.
+                    Każde zlecenie ma określoną liczbę misji do wykonania. Gracz nie wie jakie misje będą kolejne dopóki nie wykona misji poprzedzającej. Zazwyczaj misje są losowane, ale niektóre zlecenia mają określone typy misji a nawet ich kolejność.
+                </p>
+                <h3 class="brown">Awans</h3>
+                <p>
+                    Gdy dana klasa krasnoluda osiągnie poziom 25, dostępne jest zlecenie awansu. Należy wykonać cztery misję. Po wykonaniu tych misji należy dokonać wpłaty kredytów oraz surowców.
+                    Po pierwszym awansie odblokowane zostają Głębokie Kopy oraz zlecenie na odblokowanie Tygodniowego Łowu Overclocków. Awans klasy nadaję kolorową ramkę ozdobną z określoną liczbą (do 3) gwiazdek.
+                    Każdy awans również nagradza trzy matryce Overclockowania: jedną pustą, jedną na broń i jedną kosmetyczną.
+                </p>
+                <h3 class="brown" id="deepdive">Głębokie Kopy</h3>
+                <p>
+                    Każda klasa, która przynajmniej raz awansowała, kwalifikuje się na Głębokie Kopy - długie i niebezpieczne operacje, które nagradzają matryce Overclockowania.
+                    Każda operacja ma trzy etapy. Każdy etap składa się z misji głównej i misji pobocznej. Niektóre misje główne mogą pojawić się jako poboczne, a niektóre nie mogą.
+                    Aby przejść do następnego etapu, należy wykonać obie misje. Między etapami zachowywany jest stan zdrowia, ilość zasobów oraz amunicji, więc planowanie jest kluczowe.
+                    Za wykonanie każdego etapu nagradzana jest pusta matryca, matryca na broń i matryca kosmetyczna, w tej kolejności. Ilość podejść jest dowolna, ale każde zaczyna się od pierwszego etapu.
+                    Głębokie Kopy oczywiście dzielimy na te łatwe (poziom trudności etapów 3/3.5/3.5) i te trudne (poziom trudności etapów 4.5/5/5.5). Na każdy z nich zaleca się wypicie Piwa Specjalnego - efekty są przechowywane między etapami.
+                </p>
+                <h3 class="brown" id="overclock">Overclockowanie</h3>
+                <p>
+                    Po pierwszym awansie w grze, odblokowana zostaje Kuźnia. Pozwala ona na wydanie kredytów i surowców na wytworzenie Overclocka.
+                    Gracz na etapie otrzymania overclocka na broń wie jakiej broni i klasy dotyczy. Jedyne bronie w grze które się kwalifikują na otrzymanie overclocka to broń główna i poboczna.
+                    Na każdą taką broń można nałożyć tylko jeden Overclock. Są trzy klasy Overclocków - stabilne (zielone), zbalansowane (żółte) i niestabilne (czerwone).
+                    Jak nazwa sugeruje, stabilny Overclock zazwyczaj tylko marginalnie zwiększa kilka statystyk, tak jak zwykłe ulepszenie broni. W Overclockach zbalansowanych już istnieją debuffy statystyk ale silniejszy efekt.
+                    Overclocki niestabilne oferują największą moc i zazwyczaj zmieniają od gruntu jak działa broń, ale posiadają dużo debuffów w statystykach i albo wymagają konkretnej konfiguracji ulepszeń, albo wymuszają konkretny styl gry, albo nawet oba.
+                </p>
+                <p>
+                    Przykładem stabilnego Overclocka jest "Specjalny Proch" dla Strzelby Dwulufowej Scouta. Gwarantuje on potężny odrzut, który zezwala na efektywne latanie po mapie jako ta klasa.<br>
+                    Jednym z zbalansowanych Overclocków jest Płonące Piekło dla Miniguna Gunnera. Przyspiesza on przegrzewanie, ale również podpala przeciwników którzy są w zasięgu 5-metrowego stożka.
+                    Paruje się on dobrze z innym zbalansowanym Overclockiem, Lotnymi Pociskami, dla Ciężkiego Revolvera. Lotne Pociski sprawiają, że rewolwer zadaje 300% więcej obrażeń płonącym przeciwnikom w zamian za -10 obrażeń w statystykach.<br>
+                    Natomiast najbardziej ikonicznym niestabilnym Overclockiem w grze jest Gruby Chłopiec - Overclock, który zamienia granaty w wyrzutni granatów inżyniera na mini-bomby atomowe z niesamowitym polem rażenia, ale zmniejsza liczbę maksymalnej amunicji o 70% i prędkość lotu granatów o 30%.
+                </p>
+                <p>
+                    Puste Matryce można "wypełnić" gdy się znajdzie tzw. Wydarzenie Maszynowe. Jest to krótkie (ale czasem niekoniecznie łatwe) zadanie do wykonania, na które jest określony limit czasu 3 minut.
+                    Przykładowym zadaniem jest zabicie 40 Arachnidów Ebonitowych. Można to zrobić tylko wyłącznie bronią wręcz. "Maszyna" w pobliżu wydarzenia wyrzuca power-up, który pozwala na szybszy Mocny Atak Kilofem.
+                    Po pomyślnym wykonaniu Wydarzenia Maszynowego, odblokowuje się Narzędzie Infuzji. Jeżeli gracz posiada pustą matrycę, może ją wsadzić do tego narzędzia i wybrać jedną z trzech opcji wypełnienia matrycy. Z reguły (dopóki się nie odblokuje wszystkich overclocków na broń) do wyboru są dwa overclocki na broń (sygnalizowana jest na etapie wyboru tylko klasa, która otrzyma Overclock) i jeden overclock kosmetyczny.
+                    Po wyborze, gracz dowiaduje się konkretnie jaki Overclock otrzymał.
+                </p>
+                <p>
+                    O Overclockach kosmetycznych nie ma co dużo pisać. Jest ich około 3 razy więcej niż overclocków na broń i składają się z różnych czapek, animacji po wygraniu, bród itp.
+                </p>
+                <h3 class="brown" id="surowce">Surowce</h3>
+                <table>
+                    <tr>
+                        <th>Ikona</th>
+                        <th>Nazwa</th>
+                        <th>Miejsca Występowania</th>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/magnite.png" alt="Zdjęcie czerwono-czarnej rudy"></td>
+                        <td>Magnite</td>
+                        <td>Magma Core, Glacial Strata, Sandblasted Corridors</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/umanite.png" alt="Zdjęcie czerwono-czarnej rudy"></td>
+                        <td>Umanite</td>
+                        <td>Radioactive Exclusion Zone, Azure Weald, Dense Biozone, Glacial Strata</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/jadiz.png" alt="Zdjęcie zielonego klejnotu"></td>
+                        <td>Jadiz</td>
+                        <td>Crystalline Caverns, Hollow Bough, Fungus Bogs</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/bismor.png" alt="Zdjęcie złoto-czerwonej rudy"></td>
+                        <td>Bismor</td>
+                        <td>Dense Biozone, Crystalline Caverns, Hollow Bough, Salt Pits</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/enor_pearl.png" alt="Zdjęcie białej kryształowej kuli"></td>
+                        <td>Enor Pearl</td>
+                        <td>Salt Pits, Sandblasted Corridors, Radioactive Exclusion Zone</td>
+                    </tr>
+                    <tr>
+                        <td><img class="icon" src="img/drgpage/croppa.png" alt="Zdjęcie zielono-fioletowej rudy"></td>
+                        <td>Croppa</td>
+                        <td>Azure Weald, Fungus Bogs, Magma Core</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="gallery">
+                <h2 class="brown" id="galeria">Galeria</h2>
+                <div class="boxes">
+                    <figure>
+                        <a href="img/drgpage/drgclasses.jpg" target="_blank">
+                            <img class="gallery" src="img/drgpage/drgclasses.jpg" alt="Krasnoludy pozujące do zdjęcia w jaskinii.">
+                        </a>
+                        <figcaption>Z prawej do lewej: Driller, Scout, Engineer, Gunner.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/drgpage/abyssbar.png" target="_blank">
+                            <img class="gallery" src="img/drgpage/abyssbar.png" alt="Tańczące krasnoludy przed barem.">
+                        </a>
+                        <figcaption>Abyss Bar - ulubione miejsce pracowników DRG.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/drgpage/EDD.png" target="_blank">
+                            <img class="gallery" src="img/drgpage/EDD.png" alt="Mapa stanu pierwszej wojny galaktycznej">
+                        </a>
+                        <figcaption>Chwila oddechu podczas Głębokiego Kopu.</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/drgpage/deepscan.png" target="_blank">
+                            <img class="gallery" src="img/drgpage/deepscan.png" alt="Driller i Scout na windzie wewnątrz geody.">
+                        </a>
+                        <figcaption>Wynik pomyślnej eskorty Windy.</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="jquerythings">
+                <h2 class="brown">Jak oceniasz tą stronę?</h2>
+                <div id="ratestars"></div>
+                <div id="dialog" title="Informacja">
+                    <p>Ocenienie Korporacji Deep Rock Galactic na ocenę niższą niż 5 gwiazdek będzie skutkowało podtrąceniem pensji za 5 następnych misji. Miłego czytania!</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="#start">Powrót na górę</a><br>
+            Autor: Maciej Łutaj, 5B Informatyka
+        </footer>
+    </div>
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/jquery-rates.js"></script>
+    <script>
+        $(function(){
+            $('#ratestars').rates({
+                imagesFolderLocation: 'img/',
+                shapeHeight: '100px'
+            })
+        })
+    </script>
+    <script src="script/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#dialog").dialog();
+        });
+    </script>
+    <script src="script/unhide.js"></script>
+</body>
+</html>
