@@ -1,7 +1,8 @@
+"use strict";
 function unhide() {
-    var buttonIdFinder = ["megacityfinder", "howlongisthewar", "jquerythings"];
-    for (var i = 0; i < buttonIdFinder.length; i++) {
-        var thingToUnhide = document.getElementById(buttonIdFinder[i]);
+    const buttonIdFinder = ["megacityfinder", "howlongisthewar", "jquerythings"];
+    for (let i = 0; i < buttonIdFinder.length; i++) {
+        let thingToUnhide = document.getElementById(buttonIdFinder[i]);
         if (thingToUnhide) {
             thingToUnhide.style.display = "unset !important";
         }

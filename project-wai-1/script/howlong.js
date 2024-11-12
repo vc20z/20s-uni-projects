@@ -1,12 +1,13 @@
+"use strict";
 function howlong() {
-    var newParagraph = document.createElement("p");
-    var startDate = new Date();
+    const newParagraph = document.createElement("p");
+    const startDate = new Date();
     startDate.setFullYear(2024, 1, 8);
-    var currentDate = new Date();
-    var days = (currentDate.getTime() - startDate.getTime()) / 86400000; // liczba milisekund w dniu
-    var text = document.createTextNode("Ta wojna trwa ju\u017C ".concat(days, " dni."));
+    const currentDate = new Date();
+    const days = (currentDate.getTime() - startDate.getTime()) / 86400000; // liczba milisekund w dniu
+    const text = document.createTextNode(`Ta wojna trwa już ${days} dni.`);
     newParagraph.appendChild(text);
-    var target = document.querySelector("#newParaTarget");
+    const target = document.querySelector("#newParaTarget");
     target.insertAdjacentElement('afterend', newParagraph);
     document.getElementById("howlongisthewar").disabled = true;
 }
